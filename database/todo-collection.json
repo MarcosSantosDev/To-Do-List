@@ -1,0 +1,29 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "title": "Task 01",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": 2,
+      "title": "Task 02",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "id": 3,
+      "title": "Task 03",
+      "status": "DONE"
+    },
+    {
+      "id": 4,
+      "title": "Ler livro",
+      "status": "IN_PROGRESS"
+    },
+    {
+      "title": "estudar",
+      "status": "CREATED",
+      "id": 5
+    }
+  ]
+}
