@@ -1,6 +1,12 @@
 # To Do List
 
 _React Query study project_
+<br />
+<img
+  height="500"
+  src="https://user-images.githubusercontent.com/26147340/185502945-638209cb-ac98-4506-a5f3-69e6daeba516.png"
+/>
+<br />
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-orange.svg)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
