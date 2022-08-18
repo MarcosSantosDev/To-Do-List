@@ -1,6 +1,6 @@
 # To Do List
 
-_Projeto de estudos React Query_
+_React Query study project_
 
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-orange.svg)](https://github.com/prettier/prettier)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
