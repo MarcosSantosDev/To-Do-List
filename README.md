@@ -5,10 +5,7 @@
 
 _React Query study project_
 
-<img
-  height="500"
-  src="https://user-images.githubusercontent.com/26147340/185502945-638209cb-ac98-4506-a5f3-69e6daeba516.png"
-/>
+![717shots_so](https://user-images.githubusercontent.com/26147340/226636107-90f17932-5e16-440c-88a9-62b912db0bfd.png)
 
 ## Getting Started
 
