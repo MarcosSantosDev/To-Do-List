@@ -1,8 +1,5 @@
-import {
-  Task,
-  TasksWithPagination,
-} from '../../components/context/ToDoList/types';
-import clientHttp from '../clientHttp';
+import { Task, TasksWithPagination } from '@/components/context/ToDoList/types';
+import clientHttp from '@/services/clientHttp';
 
 const getTotalPages = (totalCount: number, limit: number) => {
   return Math.ceil(totalCount / limit);

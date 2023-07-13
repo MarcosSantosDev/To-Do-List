@@ -1,12 +1,14 @@
 import * as React from 'react';
-import { useIsMutating } from 'react-query';
+import { useIsMutating } from '@tanstack/react-query';
+
+import Pagination from '@/components/structure/Pagination/Pagination';
+import { Task } from '@/components/context/ToDoList/types';
 import {
   useQueryFetchTaskList,
   useMutationUpdateTask,
   useMutationDeleteTask,
-} from '../../../../hooks';
-import Pagination from '../../../structure/Pagination/Pagination';
-import { Task } from '../types';
+} from '@/hooks';
+
 import Item from './Item/Item';
 import * as S from './List.styles';
 
@@ -51,16 +53,14 @@ const List = () => {
           />
         ))}
       </S.ItemsContainerUl>
-      {isLoading ? (
-        <div>
-          <S.Paragraph>Carregando...</S.Paragraph>
-        </div>
-      ) : null}
-      {!isLoading && isFetchingTaskList ? (
-        <div>
-          <S.Paragraph>Revalidando lista de tarefas...</S.Paragraph>
-        </div>
-      ) : null}
+      <S.FeedbackBoxDiv>
+        <S.Paragraph>
+          {isLoading ? 'Status: Carregando...' : null}
+          {!isLoading && isFetchingTaskList
+            ? 'Status: Revalidando lista de tarefas...'
+            : null}
+        </S.Paragraph>
+      </S.FeedbackBoxDiv>
       <Pagination
         currentPage={taskList?.currentPage || 1}
         totalPages={taskList?.totalPages || 1}

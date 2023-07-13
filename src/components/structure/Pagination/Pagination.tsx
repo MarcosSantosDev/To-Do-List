@@ -1,5 +1,7 @@
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
-import Button from '../Button/Button';
+
+import Button from '@/components/structure/Button/Button';
+
 import * as S from './Pagination.styles';
 
 type PaginationProps = {

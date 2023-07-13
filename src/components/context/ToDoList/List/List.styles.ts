@@ -33,3 +33,11 @@ export const Paragraph = styled.p`
   font-weight: 700;
   color: #768390;
 `;
+
+export const FeedbackBoxDiv = styled.div`
+  width: 100%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;

@@ -1,7 +1,9 @@
 import * as React from 'react';
-import Button from '../../../structure/Button/Button';
+
+import Button from '@/components/structure/Button/Button';
+import { useMutationCreateTask } from '@/hooks';
+
 import * as S from './Form.styles';
-import { useMutationCreateTask } from '../../../../hooks';
 
 const Form = () => {
   const { mutateAsync: mutateAsyncCreateTask } = useMutationCreateTask();

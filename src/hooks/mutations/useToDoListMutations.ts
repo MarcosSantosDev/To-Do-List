@@ -1,15 +1,13 @@
-import { useMutation, useQueryClient } from 'react-query';
-import {
-  createTask,
-  updateTask,
-  deleteTask,
-} from '../../services/requests/todos';
-import { ToDoListStateKeysEnum } from '../queries/types';
+import { useMutation, useQueryClient } from '@tanstack/react-query';
+
+import { createTask, updateTask, deleteTask } from '@/services/requests/todos';
+import { ToDoListStateKeysEnum } from '@/hooks/queries/types';
 
 export const useMutationCreateTask = () => {
   const queryClient = useQueryClient();
 
-  return useMutation(createTask, {
+  return useMutation({
+    mutationFn: createTask,
     onSuccess: () => {
       queryClient.invalidateQueries([ToDoListStateKeysEnum.FetchTaskList]);
     },
@@ -19,7 +17,8 @@ export const useMutationCreateTask = () => {
 export const useMutationUpdateTask = (page: number) => {
   const queryClient = useQueryClient();
 
-  return useMutation(updateTask, {
+  return useMutation({
+    mutationFn: updateTask,
     onSuccess: () => {
       queryClient.invalidateQueries([
         ToDoListStateKeysEnum.FetchTaskList,
@@ -32,7 +31,8 @@ export const useMutationUpdateTask = (page: number) => {
 export const useMutationDeleteTask = (page: number) => {
   const queryClient = useQueryClient();
 
-  return useMutation(deleteTask, {
+  return useMutation({
+    mutationFn: deleteTask,
     onSuccess: () => {
       queryClient.invalidateQueries([
         ToDoListStateKeysEnum.FetchTaskList,

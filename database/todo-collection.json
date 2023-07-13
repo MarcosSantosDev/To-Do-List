@@ -3,27 +3,42 @@
     {
       "id": 1,
       "title": "Task 01",
-      "status": "IN_PROGRESS"
+      "status": "CREATED"
     },
     {
       "id": 2,
       "title": "Task 02",
-      "status": "IN_PROGRESS"
+      "status": "CREATED"
     },
     {
       "id": 3,
       "title": "Task 03",
-      "status": "DONE"
+      "status": "CREATED"
     },
     {
       "id": 4,
-      "title": "Ler livro",
-      "status": "IN_PROGRESS"
+      "title": "Task 04",
+      "status": "CREATED"
     },
     {
-      "title": "estudar",
-      "status": "CREATED",
-      "id": 5
+      "id": 5,
+      "title": "Task 05",
+      "status": "CREATED"
+    },
+    {
+      "id": 6,
+      "title": "Task 06",
+      "status": "CREATED"
+    },
+    {
+      "id": 7,
+      "title": "Task 07",
+      "status": "CREATED"
+    },
+    {
+      "id": 8,
+      "title": "Task 08",
+      "status": "CREATED"
     }
   ]
 }

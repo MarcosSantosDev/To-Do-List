@@ -1,5 +1,6 @@
-import React from 'react';
+import * as React from 'react';
 import ReactDOM from 'react-dom/client';
+
 import Layout from './Layout';
 import './styles/global.css';
 

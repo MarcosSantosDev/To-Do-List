@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
-import { TaskStatus } from '../../types';
+
+import { TaskStatus } from '@/components/context/ToDoList/types';
 
 const getColorByTaskStatus = (taskStatus: TaskStatus) => {
   switch (taskStatus) {

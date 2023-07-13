@@ -1,7 +1,9 @@
 import * as React from 'react';
-import { Task, TaskStatus } from '../../types';
+
+import { Task, TaskStatus } from '@/components/context/ToDoList/types';
+import Button from '@/components/structure/Button/Button';
+
 import * as S from './Item.styles';
-import Button from '../../../../structure/Button/Button';
 
 type ItemProps = {
   id: number;
